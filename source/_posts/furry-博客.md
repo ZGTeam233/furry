@@ -3,11 +3,13 @@ title: furry 博客
 date: 2026-09-22 09:21:39
 tags:
   - Hexo
-  - 博客
   - furry
   - 福瑞
+  - 科技
+  - web
+  - 部署
 categories:
-  - 教程
+  - 博客
 ---
 
 ## 你好 Hexo
