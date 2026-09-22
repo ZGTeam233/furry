@@ -1,8 +1,34 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
 .deploy*/
 _multiconfig.yml
+
+# 依赖
+node_modules/
+
+# Hexo 生成物
+public/
+.deploy_git/
+db.json
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 可选缓存
+.cache/
+.tmp/
