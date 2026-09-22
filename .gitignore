@@ -4,17 +4,24 @@ _multiconfig.yml
 # 依赖
 node_modules/
 
+# 锁文件：pnpm 用 pnpm-lock.yaml，忽略 npm/yarn 的
+package-lock.json
+yarn.lock
+
 # Hexo 生成物
 public/
 .deploy_git/
 db.json
+
+# pnpm
+.pnpm-store/
+.pnpm-debug.log*
 
 # 日志
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
 # 环境变量
 .env
