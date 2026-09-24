@@ -28,9 +28,9 @@ categories:
 
 - **QID** `qwsnzg6`
 - **微信** `wsnzg6_wechat`
-- **QQ群** (**帮朋友宣群**) `1126164116` // 来自 Evan
+- **QQ群** (**帮朋友宣群**) `1126164116` // 来自 **Evan**
 
-也来看看我[**朋友的 GitHub**](https://github.com/FurryHuiYao) // 来自 晖曜
+也来看看我[**朋友的 GitHub**](https://github.com/FurryHuiYao) // 来自 **晖曜**
 
 ### 最后
 
