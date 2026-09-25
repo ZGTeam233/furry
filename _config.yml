@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: furry 博客
+title: 'furry 博客'
 subtitle: '记录代码与生活'
 description: '一个分享编程, Hexo, 折腾和日常思考的地方.'
 keywords: furry, code, Hexo, tech, share
-author: Mojian Danling
-language: zh-CN
+author: 'Mojian Danling'
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL
