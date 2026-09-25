@@ -3,7 +3,6 @@ title: 我开了一个MC服务器
 date: 2026-09-23 19:52:01
 tags:
   - Minecraft
-  - Racing
   - 游戏
   - MC
   - 服务器
@@ -11,7 +10,6 @@ tags:
   - Java
   - 国际
   - 基岩
-  - BE
 categories:
   - 宣传
 ---
