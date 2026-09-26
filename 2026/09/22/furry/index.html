@@ -9,7 +9,7 @@
     
     <title>
         
-            Hexo 部署到 GitHub Pages 没样式 |
+            furry 博客 |
         
         墨兼FUR博客
     </title>
@@ -174,7 +174,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Hexo 部署到 GitHub Pages 没样式
+                        furry 博客
                     </div>
                 
 
@@ -202,13 +202,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2026-09-22 11:10:34</span>
+                <span class="datetime">2026-09-22 09:21:39</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Tue Sep 22 2026 11:24:26 GMT+0800">2026-09-22 11:24:26</span>
+                    <span class="datetime" data-updated="Tue Sep 22 2026 11:20:43 GMT+0800">2026-09-22 11:20:43</span>
                 </span>
             
         
@@ -217,7 +217,7 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/furry/categories/%E6%95%99%E7%A8%8B/">教程</a></li>
+                            <li class="category-item"><a href="/furry/categories/%E5%8D%9A%E5%AE%A2/">博客</a></li>
                         
                     
                 </ul>
@@ -234,7 +234,16 @@
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/furry/tags/%E7%A7%91%E6%8A%80/">科技</a></li>
                         
                     
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/furry/tags/%E9%83%A8%E7%BD%B2/">部署</a></li>
+                        
+                    
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/furry/tags/web/">web</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/furry/tags/furry/">furry</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/furry/tags/%E7%A6%8F%E7%91%9E/">福瑞</a></li>
                         
                     
                 </ul>
@@ -259,25 +268,67 @@
                     
 
                     
-                         <h2 id="Hexo-部署到-GitHub-Pages-没样式-AI-生成"><a href="#Hexo-部署到-GitHub-Pages-没样式-AI-生成" class="headerlink" title="Hexo 部署到 GitHub Pages 没样式 (AI 生成)"></a>Hexo 部署到 GitHub Pages 没样式 (AI 生成)</h2><p>对，这就是典型的 <strong>GitHub Pages 构建延迟 + 浏览器缓存</strong>。你改完 <code>root</code> 重新部署后，Pages 那边要重新构建，浏览器又缓存了旧的 404，等它俩都刷过来，就“自己好了”。</p>
-<p>以后遇到类似情况，记住三步：</p>
-<ol>
-<li><strong>部署完等 1～2 分钟</strong>，别急着下结论</li>
-<li><strong>无痕窗口 &#x2F; Ctrl + F5</strong> 验证，排除缓存</li>
-<li><strong>F12 → Console &#x2F; Network</strong> 看有没有 404，比瞎猜快</li>
-</ol>
-<p>顺手可以把这次的经验记一篇：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;Hexo 部署到 GitHub Pages 没样式&quot;</span></span><br></pre></td></tr></table></figure>
+                         <h2 id="你好-Hexo"><a href="#你好-Hexo" class="headerlink" title="你好 Hexo"></a>你好 Hexo</h2><p>这是我的第一篇文章.<br>让一个 <em>furry控</em> 写文章, 好奇怪啊.<br>先这样吧</p>
+<h3 id="我咋做这个页面的"><a href="#我咋做这个页面的" class="headerlink" title="我咋做这个页面的"></a>我咋做这个页面的</h3><p>很简单,<br>首先, 下载 <strong>node</strong>, 然后依次运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init furry</span><br><span class="line"><span class="built_in">cd</span> furry</span><br><span class="line">pnpm install</span><br><span class="line">hexo server</span><br><span class="line">hexo new <span class="string">&quot;furry 博客&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>把「<code>url</code> + <code>root</code> 要配对」「项目站点 root 要带仓库名」「部署有延迟」「先查缓存」写进去，以后不用再翻聊天记录。</p>
-<p>接下来可以搞的：</p>
-<ul>
-<li>换主题（<code>theme: landscape</code> 改成别的，比如 <code>hexo-theme-butterfly</code>、<code>next</code>）</li>
-<li>绑自定义域名</li>
-<li>加 <code>hexo-generator-search</code>、评论系统（Twikoo &#x2F; Waline）</li>
-<li>给 <code>_config.yml</code> 顶部把 <code>title</code>、<code>author</code> 从默认的 <code>Hexo</code> &#x2F; <code>John Doe</code> 改掉</li>
+<p>然后就有这个页面了</p>
+<hr>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章标题&quot;</span>      <span class="comment"># 新建文章</span></span><br><span class="line">hexo new draft <span class="string">&quot;草稿&quot;</span>    <span class="comment"># 新建草稿，在 source/_drafts</span></span><br><span class="line">hexo publish <span class="string">&quot;草稿&quot;</span>      <span class="comment"># 把草稿发布成正式文章</span></span><br><span class="line">hexo new page <span class="string">&quot;about&quot;</span>    <span class="comment"># 新建独立页面，如关于页</span></span><br><span class="line">hexo server              <span class="comment"># 本地预览</span></span><br><span class="line">hexo clean               <span class="comment"># 清理缓存和 public</span></span><br><span class="line">hexo generate            <span class="comment"># 生成静态文件到 public</span></span><br><span class="line">hexo deploy              <span class="comment"># 部署</span></span><br></pre></td></tr></table></figure>
+
+<p>简写：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">&quot;标题&quot;</span></span><br><span class="line">hexo s</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="写图片"><a href="#写图片" class="headerlink" title="写图片"></a>写图片</h3><p>最简单：把图片放到：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source/images/example.png</span><br></pre></td></tr></table></figure>
+
+<p>文章里引用：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">示例图片</span>](<span class="link">/images/example.png</span>)</span><br></pre></td></tr></table></figure>
+
+<p>也可以开启文章资源文件夹。在根目录 <code>_config.yml</code> 里：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>以后 <code>hexo new &quot;文章&quot;</code> 会同时生成一个同名文件夹，图片放进去，然后用：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset<span class="emphasis">_img example.png 示例图片 %&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="摘要、标签、分类"><a href="#摘要、标签、分类" class="headerlink" title="摘要、标签、分类"></a>摘要、标签、分类</h3><p>在正文里加：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>首页就只显示这行之前的内容。</p>
+<p>标签和分类写在 Front-matter：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">教程</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">博客搭建</span></span><br></pre></td></tr></table></figure>
+
+<p>主题会自动显示。</p>
+<hr>
+<h3 id="独立页面"><a href="#独立页面" class="headerlink" title="独立页面"></a>独立页面</h3><p>比如做“关于”页：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;about&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>生成：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source/about/index.md</span><br></pre></td></tr></table></figure>
+
+<p>编辑它，然后在主题配置里把 <code>about</code> 加到菜单。</p>
+<hr>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>不要直接改 <code>public</code>，那是生成结果，<code>hexo clean</code> 后会没。</li>
+<li>写文章只改 <code>source/_posts</code>。</li>
+<li>修改后浏览器没变化，就刷新；还不行就：</li>
 </ul>
-<p>有需要继续问。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="写完以后部署到-GitHub-Pages"><a href="#写完以后部署到-GitHub-Pages" class="headerlink" title="写完以后部署到 GitHub Pages"></a>写完以后部署到 GitHub Pages</h3><p>安装部署插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>编辑根目录 <code>_config.yml</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/你的用户名/你的用户名.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<p>然后：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>GitHub 仓库 <code>Settings → Pages</code> 选择 <code>main</code> 分支、<code>/root</code> 目录即可。</p>
+<p>总结：<strong><code>hexo new &quot;标题&quot;</code> → 编辑 <code>source/_posts/标题.md</code> → 刷新 <code>localhost:4000</code> 预览 → <code>hexo generate &amp;&amp; hexo deploy</code> 发布。</strong></p>
 
                     
                 </div>
@@ -298,7 +349,19 @@
                                     </li>
                                 
                                     <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/furry/tags/%E9%83%A8%E7%BD%B2/">部署</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
                                         <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/furry/tags/web/">web</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/furry/tags/furry/">furry</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/furry/tags/%E7%A6%8F%E7%91%9E/">福瑞</a>
                                     </li>
                                 
                             </ul>
@@ -317,14 +380,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/furry/2026/09/23/%E6%88%91%E5%BC%80%E4%BA%86%E4%B8%80%E4%B8%AAMC%E6%9C%8D%E5%8A%A1%E5%99%A8/"
-                                   title="我开了一个MC服务器"
+                                   href="/furry/2026/09/22/Hexo-deploy-ghpages/"
+                                   title="Hexo 部署到 GitHub Pages 没样式"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">我开了一个MC服务器</span>
+                                        <span class="post-nav-title-item text-ellipsis">Hexo 部署到 GitHub Pages 没样式</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -334,11 +397,11 @@
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/furry/2026/09/22/furry-%E5%8D%9A%E5%AE%A2/"
-                                   title="furry 博客"
+                                   href="/furry/2026/09/22/hello-world/"
+                                   title="Hello World"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">furry 博客</span>
+                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
