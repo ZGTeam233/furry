@@ -1,5 +1,5 @@
 ---
-title: about-my-server
+title: 关于我的服务器...
 date: 2026-10-08 14:53:07
 tags:
   - Minecraft

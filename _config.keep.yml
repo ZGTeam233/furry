@@ -15,7 +15,7 @@ base_info:
   title: '墨兼FUR博客'
 
   # Blog website author name
-  author: 'Mojian Danling'
+  author: 'Mojian'
 
   # Author avatar, You can use local image path or image link
   avatar: /images/avatar.jpg
@@ -69,21 +69,21 @@ first_screen:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/social_contact.html
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false      # Option values: true | false
+  enable: true # Option values: true | false
   links:
     # Fill in your social platform links here, e.g. `github: https://github.com/XPoet`
     # If you want to click open the picture, you need to add a prefix `img | `,
     # at the same time change your link to the image link.
     # e.g. `weixin: img | ./images/qrcode.png`
-    github:          # GitHub
-    weixin:          # WeChat
-    qq:              # QQ
+    github: https://github.com/ZGTeam233 # GitHub
+    weixin: wsnzg6_wechat # WeChat
+    qq: qwsnzg6 # QQ
     weibo:           # WeiBo
     zhihu:           # ZhiHu
     twitter:         # Twitter
     x:               # X
     facebook:        # Facebook
-    email:           # Email
+    email: wsnzg6@outlook.com # Email
 
 
 # ---------------------------------------------------------------------------------------
